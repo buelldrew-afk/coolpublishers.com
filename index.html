@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cool Publishers is the imprint of Dr. Drew Buell, pastor-teacher of Cool Community Church in Cool, California: expositional commentary, devotionals, and books for the family and the local church.">
+<meta property="og:title" content="Cool Publishers">
+<meta property="og:description" content="Books by Dr. Drew Buell, pastor-teacher of Cool Community Church.">
+<meta property="og:image" content="https://coolpublishers.com/img/logo.png">
+<meta property="og:url" content="https://coolpublishers.com/">
+<link rel="icon" href="img/logo.png">
+<title>Cool Publishers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+/* Layout: an ink-black imprint page taken from the logo — black header and hero,
+   cream "paper" bands for the catalog and author, one brass accent drawn from the pen nib. */
+:root {
+  --ink: #0d0c0a;
+  --ink-2: #1b1915;
+  --paper: #f4ebdf;
+  --paper-2: #e9dccb;
+  --cream: #f5e6d6;
+  --muted-on-ink: #a89c8c;
+  --muted-on-paper: #6b6052;
+  --brass: #b48a4c;
+  --brass-deep: #8a6630;
+  --rule-ink: #2c2822;
+  --rule-paper: #d5c5b0;
+  --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --label: "Jost", "Futura", "Century Gothic", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--ink); color: var(--cream); font-family: var(--body); font-size: 18px; line-height: 1.6; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.eyebrow { font-family: var(--label); font-weight: 400; font-size: 0.72rem; letter-spacing: 0.32em; text-transform: uppercase; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; margin: 0; line-height: 1.12; }
+
+/* header */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--ink) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule-ink); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.wordmark { display: flex; flex-direction: column; align-items: flex-start; text-decoration: none; line-height: 1; }
+.wordmark b { font-family: var(--display); font-weight: 500; font-size: 1.45rem; letter-spacing: 0.06em; }
+.wordmark span { font-family: var(--label); font-weight: 300; font-size: 0.55rem; letter-spacing: 0.42em; margin-top: 4px; color: var(--muted-on-ink); }
+nav ul { display: flex; flex-wrap: wrap; gap: 6px 26px; list-style: none; margin: 0; padding: 0; }
+nav a { font-family: var(--label); font-size: 0.74rem; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none; color: var(--muted-on-ink); }
+nav a:hover { color: var(--cream); }
+
+/* hero */
+.hero { padding-block: 72px 80px; border-bottom: 1px solid var(--rule-ink); }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center; }
+.hero-copy { min-width: 0; }
+.hero .eyebrow { color: var(--brass); }
+.hero h1 { font-size: clamp(2.3rem, 5.2vw, 4rem); margin-top: 18px; }
+.hero h1 em { font-style: italic; color: var(--brass); }
+.hero p.lede { color: var(--muted-on-ink); max-width: 36ch; font-size: 1.12rem; margin: 22px 0 30px; }
+.btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { font-family: var(--label); font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; padding: 13px 22px; border: 1px solid var(--brass); color: var(--cream); display: inline-block; }
+.btn.solid { background: var(--brass); color: var(--ink); }
+.btn:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--cream); }
+.feature { display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: end; min-width: 0; }
+.feature img { width: 210px; max-width: 100%; aspect-ratio: 5 / 8; object-fit: cover; box-shadow: 0 24px 50px -18px #000, 0 0 0 1px var(--rule-ink); }
+.feature .meta { min-width: 0; padding-bottom: 6px; }
+.feature .meta .eyebrow { color: var(--brass); display: block; margin-bottom: 10px; }
+.feature .meta h3 { font-size: 1.6rem; }
+.feature .meta p { color: var(--muted-on-ink); font-size: 0.95rem; margin: 8px 0 0; }
+
+/* paper bands */
+.paper { background: var(--paper); color: var(--ink); }
+.paper .eyebrow { color: var(--brass-deep); }
+section.band { padding-block: 84px; }
+.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px 32px; margin-bottom: 44px; border-bottom: 1px solid var(--rule-paper); padding-bottom: 18px; }
+.sec-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); margin-top: 8px; }
+.sec-head p { margin: 0; max-width: 46ch; color: var(--muted-on-paper); font-size: 1rem; }
+
+/* catalog */
+.shelf + .shelf { margin-top: 56px; }
+.shelf h3 { font-family: var(--label); font-weight: 500; font-size: 0.78rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--muted-on-paper); margin-bottom: 22px; }
+.books { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 40px 32px; }
+.book { display: flex; flex-direction: column; gap: 12px; min-width: 0; text-decoration: none; }
+.book img { width: 100%; aspect-ratio: 5 / 8; object-fit: cover; background: var(--paper-2); box-shadow: 0 14px 28px -16px rgba(13,12,10,.55), 0 0 0 1px rgba(13,12,10,.08); transition: transform .25s ease, box-shadow .25s ease; }
+.book:hover img { transform: translateY(-4px); box-shadow: 0 22px 34px -16px rgba(13,12,10,.6), 0 0 0 1px rgba(13,12,10,.1); }
+.book .t { font-family: var(--display); font-size: 1.12rem; line-height: 1.2; font-weight: 500; }
+.book .d { font-size: 0.9rem; color: var(--muted-on-paper); line-height: 1.45; }
+.book .y { font-family: var(--label); font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass-deep); }
+
+/* in progress */
+.desk { padding-block: 84px; }
+.desk .sec-head { border-color: var(--rule-ink); }
+.desk .sec-head p { color: var(--muted-on-ink); }
+.desk .eyebrow { color: var(--brass); }
+.projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1px; background: var(--rule-ink); border: 1px solid var(--rule-ink); }
+.proj { background: var(--ink); padding: 26px 24px 28px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.proj .stage { font-family: var(--label); font-size: 0.66rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--brass); }
+.proj h3 { font-size: 1.35rem; }
+.proj p { margin: 0; color: var(--muted-on-ink); font-size: 0.93rem; line-height: 1.5; }
+.draft { font-family: var(--label); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted-on-ink); border: 1px dashed var(--rule-ink); padding: 2px 8px; align-self: flex-start; }
+
+/* author */
+.author .wrap { display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: start; }
+.portrait { min-width: 0; }
+.portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 40%; box-shadow: 0 0 0 1px var(--rule-paper); }
+.facts { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 12px; }
+.facts li { display: grid; grid-template-columns: 92px 1fr; gap: 12px; font-size: 0.9rem; border-top: 1px solid var(--rule-paper); padding-top: 10px; }
+.facts span { font-family: var(--label); font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted-on-paper); padding-top: 3px; }
+.bio { min-width: 0; max-width: 64ch; }
+.bio h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin: 8px 0 22px; }
+.bio p { margin: 0 0 1.05em; }
+.bio p:first-of-type::first-letter { font-family: var(--display); float: left; font-size: 3.4em; line-height: 0.85; padding: 6px 10px 0 0; color: var(--brass-deep); }
+
+/* follow */
+.follow { padding-block: 84px; }
+.follow .wrap > .eyebrow { color: var(--brass); }
+.follow h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); margin: 8px 0 36px; }
+.channels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.ch { border-top: 1px solid var(--brass); padding-top: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; text-decoration: none; }
+.ch .eyebrow { color: var(--muted-on-ink); }
+.ch h3 { font-size: 1.5rem; }
+.ch p { margin: 0; color: var(--muted-on-ink); font-size: 0.95rem; }
+.ch .go { font-family: var(--label); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-top: auto; }
+.ch:hover h3 { color: var(--brass); }
+
+footer { border-top: 1px solid var(--rule-ink); padding-block: 40px 56px; color: var(--muted-on-ink); font-size: 0.88rem; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between; }
+footer img { width: 92px; height: 92px; }
+footer p { margin: 0; max-width: 60ch; }
+
+@media (max-width: 860px) {
+  .hero .wrap, .author .wrap { grid-template-columns: 1fr; gap: 40px; }
+  .portrait { max-width: 300px; }
+  .channels { grid-template-columns: 1fr; }
+  nav ul { gap: 6px 16px; }
+}
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .top .wrap { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .feature { grid-template-columns: 1fr; }
+  .feature img { width: 170px; }
+  .books { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 18px; }
+  section.band, .desk, .follow { padding-block: 60px; }
+}
+@media (prefers-reduced-motion: reduce) { .book img { transition: none; } .book:hover img { transform: none; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Cool Publishers home"><b>COOL</b><span>PUBLISHERS</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#desk">On the Desk</a></li>
+        <li><a href="#author">The Author</a></li>
+        <li><a href="#follow">Read &amp; Watch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">Cool, California &middot; Since 2019</div>
+        <h1>Books from the pulpit, written for the <em>pew</em> and the kitchen table.</h1>
+        <p class="lede">Cool Publishers is the imprint of Dr. Drew Buell, pastor-teacher of Cool Community Church. Expositional commentary, devotionals, and books for the family and the local church.</p>
+        <div class="btns">
+          <a class="btn solid" href="#books">Browse the books</a>
+          <a class="btn" href="#desk">See what's coming</a>
+        </div>
+      </div>
+      <a class="feature" href="https://www.amazon.com/dp/B0HK6WHP8X" target="_blank" rel="noopener">
+        <img src="img/believe.jpg" alt="Cover of Believe: An Expositional Commentary on John 1:1–2:25">
+        <div class="meta">
+          <span class="eyebrow">New &middot; September 2026</span>
+          <h3>Believe&hellip;</h3>
+          <p>An Expositional Commentary on John 1:1&ndash;2:25. The first volume of a series through the Gospel of John.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="paper band" id="books">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">The Catalog</div><h2>Nine books in print</h2></div>
+        <p>Every title is available on Amazon. Select a cover to go to its page.</p>
+      </div>
+
+      <div class="shelf">
+        <h3>Scripture &amp; Doctrine</h3>
+        <div class="books">
+          <a class="book" href="https://www.amazon.com/dp/B0HK6WHP8X" target="_blank" rel="noopener"><img src="img/believe.jpg" alt="" loading="lazy"><span class="y">2026</span><span class="t">Believe&hellip;</span><span class="d">The opening chapters of John, where the Word becomes flesh and every sign asks one question: will you believe?</span></a>
+          <a class="book" href="https://www.amazon.com/dp/B0H6C8RGXB" target="_blank" rel="noopener"><img src="img/ten-words.jpg" alt="" loading="lazy"><span class="y">2026</span><span class="t">Ten Words to Build Your Life On</span><span class="d">The Ten Commandments: what they reveal about God, what they expose in us, and how they point to Christ.</span></a>
+          <a class="book" href="https://www.amazon.com/dp/B0FKNJK11X" target="_blank" rel="noopener"><img src="img/heaven.jpg" alt="" loading="lazy"><span class="y">2025</span><span class="t">Heaven: Our Forever Home</span><span class="d">A biblical look at what happens after death and why the resurrection changes how we live now.</span></a>
+        </div>
+      </div>
+
+      <div class="shelf">
+        <h3>Church &amp; Family</h3>
+        <div class="books">
+          <a class="book" href="https://www.amazon.com/dp/B0FKNJ9FS8" target="_blank" rel="noopener"><img src="img/i-still-do.jpg" alt="" loading="lazy"><span class="y">2025</span><span class="t">I Still Do</span><span class="d">Encouragement for lifelong covenant faithfulness in marriage, for newlyweds and for those many years in.</span></a>
+          <a class="book" href="https://www.amazon.com/dp/B09XFBDYQN" target="_blank" rel="noopener"><img src="img/journeys.jpg" alt="" loading="lazy"><span class="y">2022</span><span class="t">Journeys: An Adoption Story</span><span class="d">Four newborn siblings, four adoptions in under 39 months, and the families God brought them to.</span></a>
+          <a class="book" href="https://www.amazon.com/dp/B07YK5G9DC" target="_blank" rel="noopener"><img src="img/membership.jpg" alt="" loading="lazy"><span class="y">2019</span><span class="t">Membership Matters</span><span class="d">What church membership is, why it matters, and what it means to belong to a body.</span></a>
+          <a class="book" href="https://www.amazon.com/dp/B09DP6SSZP" target="_blank" rel="noopener"><img src="img/fearful-men.jpg" alt="" loading="lazy"><span class="y">2021</span><span class="t">We Are Not Descended from Fearful Men</span><span class="d">Five sermons from 2020 calling American Christians to refuse to live in fear.</span></a>
+        </div>
+      </div>
+
+      <div class="shelf">
+        <h3>Advent &amp; Christmas</h3>
+        <div class="books">
+          <a class="book" href="https://www.amazon.com/dp/B0FY417BNM" target="_blank" rel="noopener"><img src="img/mortal-flesh.jpg" alt="" loading="lazy"><span class="y">2025</span><span class="t">Let All Mortal Flesh Keep Silence</span><span class="d">Twenty-four Advent devotionals to read alone or with your family through December.</span></a>
+          <a class="book" href="https://www.amazon.com/dp/B0BGQPBMX7" target="_blank" rel="noopener"><img src="img/christmas-carol.jpg" alt="" loading="lazy"><span class="y">2022</span><span class="t">A Christmas Carol: Reader's Edition</span><span class="d">Dickens's classic, abridged and repunctuated for reading aloud by the fireside.</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="desk" id="desk">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">On the Desk</div><h2>Books in progress</h2></div>
+        <p>Most of these begin as sermons at Cool Community Church. Subscribe on Substack to hear when each one is released.</p>
+      </div>
+      <div class="projects">
+        <div class="proj"><span class="stage">Editing &middot; Gospel of John</span><h3>Believe, Volumes 2 &amp; 3</h3><p>The expositional series through John continues, chapter by chapter.</p></div>
+        <div class="proj"><span class="stage">Drafting &middot; Doctrine</span><h3>The Doctrines of Grace</h3><p>Unconditional election, particular redemption, and the rest of the doctrines of grace, as a standalone book.</p><span class="draft">Working title</span></div>
+        <div class="proj"><span class="stage">Drafting &middot; Philippians</span><h3>Unexpected Joy</h3><p>A devotional that moves passage by passage through Paul's letter of joy.</p></div>
+        <div class="proj"><span class="stage">On Substack &middot; Colossians</span><h3>The Preeminence of Christ</h3><p>Essays from Colossians and Philemon, published as they're written, on the supremacy of Christ.</p><span class="draft">Working title</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper band author" id="author">
+    <div class="wrap">
+      <div class="portrait">
+        <img src="img/drew.jpg" alt="Dr. Drew Buell">
+        <ul class="facts">
+          <li><span>Church</span>Pastor-Teacher, Cool Community Church, since 2010</li>
+          <li><span>Training</span>B.A., The Master's University; M.Div. &amp; D.Min., The Master's Seminary</li>
+          <li><span>Home</span>Cool, California, with Amy and their four children</li>
+        </ul>
+      </div>
+      <div class="bio">
+        <div class="eyebrow">About the Author</div>
+        <h2>Dr. Drew Buell</h2>
+        <p>Drew Buell has served as pastor-teacher of Cool Community Church in the Sierra foothills of Northern California since 2010. He preaches verse by verse through books of the Bible, and most of what he writes begins in the pulpit before it is reworked for the page.</p>
+        <p>Drew graduated from The Master's University in 2001 with a degree in Bible Exposition. He went on to The Master's Seminary, completing a Master of Divinity in 2005 and a Doctor of Ministry in 2021. Before coming to Cool he served as associate pastor of student ministries and worship at Pine Mountain Christian Community Church, and then as an associate pastor at Emmanuel Baptist Church in Mount Vernon, Washington.</p>
+        <p>Drew grew up in a Christian home with godly parents. He married Amy in 2001, and the Lord has given them four children: Micah, Cody, Luke, and Ruth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="follow" id="follow">
+    <div class="wrap">
+      <div class="eyebrow">Read &amp; Watch</div>
+      <h2>Between books</h2>
+      <div class="channels">
+        <a class="ch" href="https://drewbuell.substack.com/" target="_blank" rel="noopener"><span class="eyebrow">Substack</span><h3>Essays</h3><p>Essays from the Colossians series, and the first word on new books.</p><span class="go">Subscribe &rarr;</span></a>
+        <a class="ch" href="#follow"><span class="eyebrow">YouTube</span><h3>Sermons</h3><p>Sunday sermons from Cool Community Church, the source of most of these books.</p><span class="go">Watch &rarr;</span></a>
+        <a class="ch" href="https://www.facebook.com/drewbuell" target="_blank" rel="noopener"><span class="eyebrow">Facebook</span><h3>Drew Buell</h3><p>Updates from Drew, new releases, and news from Cool Community Church.</p><span class="go">Follow &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo.png" alt="Cool Publishers logo">
+    <p>Cool Publishers is the publishing imprint of Dr. Drew Buell, Cool, California. Books are printed and distributed through Amazon. Cool Publishers does not accept manuscript submissions.</p>
+  </div>
+</footer>
+</body>
+</html>
