@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Cool Publishers is the imprint of Dr. Drew Buell, pastor-teacher of Cool Community Church in Cool, California: expositional commentary, devotionals, and books for the family and the local church.">
+<meta name="description" content="Cool Publishers is the imprint of Dr. Drew Buell, pastor-teacher of Cool Community Church in Cool, California.">
 <meta property="og:title" content="Cool Publishers">
-<meta property="og:description" content="Books by Dr. Drew Buell, pastor-teacher of Cool Community Church.">
+<meta property="og:description" content="Books from the pulpit ministry of Dr. Drew Buell.">
 <meta property="og:image" content="https://coolpublishers.com/img/logo.png">
 <meta property="og:url" content="https://coolpublishers.com/">
 <link rel="icon" href="img/logo.png">
@@ -116,17 +116,33 @@ section.band { padding-block: 84px; }
 .bio p { margin: 0 0 1.05em; }
 .bio p:first-of-type::first-letter { font-family: var(--display); float: left; font-size: 3.4em; line-height: 0.85; padding: 6px 10px 0 0; color: var(--brass-deep); }
 
-/* follow */
-.follow { padding-block: 84px; }
-.follow .wrap > .eyebrow { color: var(--brass); }
-.follow h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); margin: 8px 0 36px; }
-.channels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.ch { border-top: 1px solid var(--brass); padding-top: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; text-decoration: none; }
-.ch .eyebrow { color: var(--muted-on-ink); }
-.ch h3 { font-size: 1.5rem; }
-.ch p { margin: 0; color: var(--muted-on-ink); font-size: 0.95rem; }
-.ch .go { font-family: var(--label); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); margin-top: auto; }
-.ch:hover h3 { color: var(--brass); }
+/* between books: the one live band, set off with brass rules */
+.follow { padding-block: 84px; background: var(--ink-2); border-top: 3px solid var(--brass); border-bottom: 1px solid var(--rule-ink); }
+.follow .sec-head { border-color: var(--rule-ink); }
+.follow .sec-head p { color: var(--muted-on-ink); }
+.follow .eyebrow { color: var(--brass); }
+.live { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.col { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.col > .btn { align-self: flex-start; }
+.col-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.col-head a { font-family: var(--label); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted-on-ink); text-decoration: none; }
+.col-head a:hover { color: var(--cream); }
+.essays { display: flex; flex-direction: column; gap: 18px; }
+.essay { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; align-items: start; text-decoration: none; }
+.essay img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--rule-ink); }
+.essay.lead, .essay.noimg { grid-template-columns: 1fr; gap: 14px; }
+.essay-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.essay .t { font-family: var(--display); font-size: 1.2rem; line-height: 1.2; font-weight: 500; }
+.essay.lead .t { font-size: 1.65rem; }
+.essay .d { color: var(--muted-on-ink); font-size: 0.92rem; line-height: 1.45; }
+.essay .y { font-family: var(--label); font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass); }
+.essay:hover .t { color: var(--brass); }
+.essay + .essay { border-top: 1px solid var(--rule-ink); padding-top: 18px; }
+.video { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; box-shadow: 0 24px 50px -24px #000, 0 0 0 1px var(--rule-ink); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.note { margin: 0; color: var(--muted-on-ink); font-size: 0.85rem; }
+.fb { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; border-top: 1px solid var(--rule-ink); padding-top: 18px; text-decoration: none; font-size: 0.98rem; }
+.fb:hover span:last-child { color: var(--brass); }
 
 footer { border-top: 1px solid var(--rule-ink); padding-block: 40px 56px; color: var(--muted-on-ink); font-size: 0.88rem; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between; }
@@ -136,7 +152,7 @@ footer p { margin: 0; max-width: 60ch; }
 @media (max-width: 860px) {
   .hero .wrap, .author .wrap { grid-template-columns: 1fr; gap: 40px; }
   .portrait { max-width: 300px; }
-  .channels { grid-template-columns: 1fr; }
+  .live { grid-template-columns: 1fr; gap: 56px; }
   nav ul { gap: 6px 16px; }
 }
 @media (max-width: 560px) {
@@ -146,6 +162,7 @@ footer p { margin: 0; max-width: 60ch; }
   .feature img { width: 170px; }
   .books { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 18px; }
   section.band, .desk, .follow { padding-block: 60px; }
+  .essay { grid-template-columns: 96px minmax(0, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) { .book img { transition: none; } .book:hover img { transform: none; } }
 </style>
@@ -158,9 +175,9 @@ footer p { margin: 0; max-width: 60ch; }
     <nav aria-label="Main">
       <ul>
         <li><a href="#books">Books</a></li>
+        <li><a href="#follow">Read &amp; Watch</a></li>
         <li><a href="#desk">On the Desk</a></li>
         <li><a href="#author">The Author</a></li>
-        <li><a href="#follow">Read &amp; Watch</a></li>
       </ul>
     </nav>
   </div>
@@ -170,9 +187,9 @@ footer p { margin: 0; max-width: 60ch; }
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <div class="eyebrow">Cool, California &middot; Since 2019</div>
-        <h1>Books from the pulpit, written for the <em>pew</em> and the kitchen table.</h1>
-        <p class="lede">Cool Publishers is the imprint of Dr. Drew Buell, pastor-teacher of Cool Community Church. Expositional commentary, devotionals, and books for the family and the local church.</p>
+        <div class="eyebrow">Cool, California &middot; Since 2010</div>
+        <h1>Books from the <em>pulpit ministry</em> of Dr. Drew Buell.</h1>
+        <p class="lede">Cool Publishers is the imprint of Dr. Drew Buell, pastor-teacher of Cool Community Church.</p>
         <div class="btns">
           <a class="btn solid" href="#books">Browse the books</a>
           <a class="btn" href="#desk">See what's coming</a>
@@ -197,6 +214,14 @@ footer p { margin: 0; max-width: 60ch; }
       </div>
 
       <div class="shelf">
+        <h3>Advent &amp; Christmas</h3>
+        <div class="books">
+          <a class="book" href="https://www.amazon.com/dp/B0FY417BNM" target="_blank" rel="noopener"><img src="img/mortal-flesh.jpg" alt="" loading="lazy"><span class="y">2025</span><span class="t">Let All Mortal Flesh Keep Silence</span><span class="d">Twenty-four Advent devotionals to read alone or with your family through December.</span></a>
+          <a class="book" href="https://www.amazon.com/dp/B0BGQPBMX7" target="_blank" rel="noopener"><img src="img/christmas-carol.jpg" alt="" loading="lazy"><span class="y">2022</span><span class="t">A Christmas Carol: Reader's Edition</span><span class="d">Dickens's classic, abridged and repunctuated for reading aloud by the fireside.</span></a>
+        </div>
+      </div>
+
+      <div class="shelf">
         <h3>Scripture &amp; Doctrine</h3>
         <div class="books">
           <a class="book" href="https://www.amazon.com/dp/B0HK6WHP8X" target="_blank" rel="noopener"><img src="img/believe.jpg" alt="" loading="lazy"><span class="y">2026</span><span class="t">Believe&hellip;</span><span class="d">The opening chapters of John, where the Word becomes flesh and every sign asks one question: will you believe?</span></a>
@@ -214,12 +239,30 @@ footer p { margin: 0; max-width: 60ch; }
           <a class="book" href="https://www.amazon.com/dp/B09DP6SSZP" target="_blank" rel="noopener"><img src="img/fearful-men.jpg" alt="" loading="lazy"><span class="y">2021</span><span class="t">We Are Not Descended from Fearful Men</span><span class="d">Five sermons from 2020 calling American Christians to refuse to live in fear.</span></a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="shelf">
-        <h3>Advent &amp; Christmas</h3>
-        <div class="books">
-          <a class="book" href="https://www.amazon.com/dp/B0FY417BNM" target="_blank" rel="noopener"><img src="img/mortal-flesh.jpg" alt="" loading="lazy"><span class="y">2025</span><span class="t">Let All Mortal Flesh Keep Silence</span><span class="d">Twenty-four Advent devotionals to read alone or with your family through December.</span></a>
-          <a class="book" href="https://www.amazon.com/dp/B0BGQPBMX7" target="_blank" rel="noopener"><img src="img/christmas-carol.jpg" alt="" loading="lazy"><span class="y">2022</span><span class="t">A Christmas Carol: Reader's Edition</span><span class="d">Dickens's classic, abridged and repunctuated for reading aloud by the fireside.</span></a>
+  <section class="follow" id="follow">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Read &amp; Watch</div><h2>Between books</h2></div>
+        <p>The newest essays and sermons appear here on their own as they're published.</p>
+      </div>
+      <div class="live">
+        <div class="col">
+          <div class="col-head"><span class="eyebrow">Latest on Substack</span><a href="https://drewbuell.substack.com/archive" target="_blank" rel="noopener">All essays &rarr;</a></div>
+          <div class="essays" id="essays">
+            <a class="essay lead" href="https://drewbuell.substack.com/" target="_blank" rel="noopener"><div class="essay-text"><span class="t">Drew's Substack</span><span class="d">Reflections on life, ministry, and theology from a small-town pastor.</span></div></a>
+          </div>
+          <a class="btn solid" href="https://drewbuell.substack.com/subscribe" target="_blank" rel="noopener">Subscribe on Substack</a>
+        </div>
+        <div class="col">
+          <div class="col-head"><span class="eyebrow">Latest on YouTube</span><a href="https://www.youtube.com/drewbuell" target="_blank" rel="noopener">The channel &rarr;</a></div>
+          <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=UU5HQE98ZBWdxV6BsWHGchZQ" title="Latest sermons from Drew Buell on YouTube" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="note">The player opens on the newest upload. Use the playlist button in its corner to see earlier sermons.</p>
+          <a class="fb" href="https://www.facebook.com/drewbuell" target="_blank" rel="noopener"><span class="eyebrow">Facebook</span><span>Follow Drew for updates and new releases &rarr;</span></a>
         </div>
       </div>
     </div>
@@ -260,17 +303,6 @@ footer p { margin: 0; max-width: 60ch; }
     </div>
   </section>
 
-  <section class="follow" id="follow">
-    <div class="wrap">
-      <div class="eyebrow">Read &amp; Watch</div>
-      <h2>Between books</h2>
-      <div class="channels">
-        <a class="ch" href="https://drewbuell.substack.com/" target="_blank" rel="noopener"><span class="eyebrow">Substack</span><h3>Essays</h3><p>Essays from the Colossians series, and the first word on new books.</p><span class="go">Subscribe &rarr;</span></a>
-        <a class="ch" href="https://www.youtube.com/drewbuell" target="_blank" rel="noopener"><span class="eyebrow">YouTube</span><h3>Sermons</h3><p>Sunday sermons from Cool Community Church, the source of most of these books.</p><span class="go">Watch &rarr;</span></a>
-        <a class="ch" href="https://www.facebook.com/drewbuell" target="_blank" rel="noopener"><span class="eyebrow">Facebook</span><h3>Drew Buell</h3><p>Updates from Drew, new releases, and news from Cool Community Church.</p><span class="go">Follow &rarr;</span></a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
@@ -279,5 +311,37 @@ footer p { margin: 0; max-width: 60ch; }
     <p>Cool Publishers is the publishing imprint of Dr. Drew Buell, Cool, California. Books are printed and distributed through Amazon. Cool Publishers does not accept manuscript submissions.</p>
   </div>
 </footer>
+<script>
+// Latest Substack essays. data/substack.json is refreshed every few hours by
+// .github/workflows/deploy.yml; if it can't load, the static card stays.
+(async function () {
+  const box = document.getElementById('essays');
+  try {
+    const res = await fetch('data/substack.json', { cache: 'no-cache' });
+    if (!res.ok) return;
+    const posts = ((await res.json()).posts || []).slice(0, 3);
+    if (!posts.length) return;
+    const fmt = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    box.replaceChildren(...posts.map((p, i) => {
+      const a = document.createElement('a');
+      a.className = 'essay' + (i === 0 ? ' lead' : '') + (p.image ? '' : ' noimg');
+      a.href = p.link; a.target = '_blank'; a.rel = 'noopener';
+      if (p.image) {
+        const img = document.createElement('img');
+        img.src = p.image; img.alt = ''; img.loading = 'lazy';
+        a.append(img);
+      }
+      const text = document.createElement('div');
+      text.className = 'essay-text';
+      const add = (cls, s) => { if (!s) return; const el = document.createElement('span'); el.className = cls; el.textContent = s; text.append(el); };
+      add('y', p.date ? fmt.format(new Date(p.date)) : '');
+      add('t', p.title);
+      if (i === 0) add('d', p.subtitle);
+      a.append(text);
+      return a;
+    }));
+  } catch (e) { /* keep the static card */ }
+})();
+</script>
 </body>
 </html>
