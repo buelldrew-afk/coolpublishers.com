@@ -17,7 +17,10 @@ COUNT = 3
 
 def main():
     try:
-        req = urllib.request.Request(FEED, headers={"User-Agent": "coolpublishers.com feed updater"})
+        req = urllib.request.Request(FEED, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36",
+            "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
+        })
         with urllib.request.urlopen(req, timeout=30) as resp:
             root = ET.fromstring(resp.read())
     except Exception as e:
