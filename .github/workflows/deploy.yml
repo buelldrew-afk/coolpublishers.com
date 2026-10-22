@@ -1,12 +1,11 @@
-# Publishes the site to GitHub Pages.
-# Runs on every push to main, and every 3 hours so new Substack essays show up on their own.
+# Publishes the site to GitHub Pages on every push to main.
+# New Substack essays arrive as pushes from scripts/update-substack.ps1,
+# which runs daily on Drew's PC (Substack blocks GitHub's servers).
 name: Deploy site
 
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: "17 */3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,8 +25,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch latest Substack essays
-        run: python3 scripts/update_feeds.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

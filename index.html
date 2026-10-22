@@ -257,11 +257,11 @@ footer p { margin: 0; max-width: 60ch; }
           <a class="btn solid" href="https://drewbuell.substack.com/subscribe" target="_blank" rel="noopener">Subscribe on Substack</a>
         </div>
         <div class="col">
-          <div class="col-head"><span class="eyebrow">Latest on YouTube</span><a href="https://www.youtube.com/drewbuell" target="_blank" rel="noopener">The channel &rarr;</a></div>
+          <div class="col-head"><span class="eyebrow">Sermons on YouTube &middot; John</span><a href="https://www.youtube.com/playlist?list=PLfBd30FirIEc" target="_blank" rel="noopener">The series &rarr;</a></div>
           <div class="video">
-            <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=UU5HQE98ZBWdxV6BsWHGchZQ" title="Latest sermons from Drew Buell on YouTube" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfBd30FirIEc" title="The Gospel of John (Believe): sermons by Drew Buell" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-          <p class="note">The player opens on the newest upload. Use the playlist button in its corner to see earlier sermons.</p>
+          <p class="note">Sermons from the Gospel of John series. Use the playlist button in the corner of the player to choose another sermon.</p>
           <a class="fb" href="https://www.facebook.com/drewbuell" target="_blank" rel="noopener"><span class="eyebrow">Facebook</span><span>Follow Drew for updates and new releases &rarr;</span></a>
         </div>
       </div>
@@ -312,8 +312,8 @@ footer p { margin: 0; max-width: 60ch; }
   </div>
 </footer>
 <script>
-// Latest Substack essays. data/substack.json is refreshed every few hours by
-// .github/workflows/deploy.yml; if it can't load, the static card stays.
+// Latest Substack essays. data/substack.json is refreshed daily by
+// scripts/update-substack.ps1; if it can't load, the static card stays.
 (async function () {
   const box = document.getElementById('essays');
   try {
