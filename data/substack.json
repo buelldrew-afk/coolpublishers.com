@@ -1,25 +1,25 @@
 {
     "posts":  [
                   {
+                      "title":  "Refiner’s Fire",
+                      "subtitle":  "Why does life get so hard sometimes?",
+                      "link":  "https://drewbuell.substack.com/p/refiners-fire",
+                      "date":  "2026-10-22T14:02:06.0000000+00:00",
+                      "image":  null
+                  },
+                  {
+                      "title":  "The Greatest Treasure No One Found...",
+                      "subtitle":  "What one sunken ship reveals about the only kind of wealth that really lasts",
+                      "link":  "https://drewbuell.substack.com/p/the-greatest-treasure-no-one-found",
+                      "date":  "2026-10-22T04:40:45.0000000+00:00",
+                      "image":  "https://substackcdn.com/image/fetch/$s_!SWTZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F494a8b82-f1f6-4d11-a5b7-f92a5f508a5d_1536x544.png"
+                  },
+                  {
                       "title":  "Him We Proclaim!",
                       "subtitle":  "Paul\u0027s Ministry Plan...",
                       "link":  "https://drewbuell.substack.com/p/him-we-proclaim",
                       "date":  "2026-10-14T14:03:41.0000000+00:00",
                       "image":  "https://substackcdn.com/image/fetch/$s_!UQuK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ccc3907-be36-4b8c-a09c-1ce64b138084_1536x1024.png"
-                  },
-                  {
-                      "title":  "Without Wax...",
-                      "subtitle":  "What does it truly mean to live a sincere life?",
-                      "link":  "https://drewbuell.substack.com/p/without-wax",
-                      "date":  "2026-10-08T14:02:12.0000000+00:00",
-                      "image":  null
-                  },
-                  {
-                      "title":  "The Witness That Cannot Be Beaten Out of You",
-                      "subtitle":  "Paul\u0027s twin callings for every Christian...",
-                      "link":  "https://drewbuell.substack.com/p/the-witness-that-cannot-be-beaten",
-                      "date":  "2026-10-07T14:01:47.0000000+00:00",
-                      "image":  "https://substackcdn.com/image/fetch/$s_!RW4m!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbef4eeea-a2a9-4b92-8d53-053902c0b1ab_1536x672.png"
                   }
               ]
 }
