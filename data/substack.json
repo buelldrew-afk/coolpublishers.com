@@ -1,6 +1,13 @@
 {
     "posts":  [
                   {
+                      "title":  "Stuck...",
+                      "subtitle":  "Have you ever felt completely stuck\u0026#8212;unable to serve, move forward, or do what you used to do?",
+                      "link":  "https://drewbuell.substack.com/p/stuck",
+                      "date":  "2026-11-05T15:33:30.0000000+00:00",
+                      "image":  null
+                  },
+                  {
                       "title":  "Nothing to Negotiate...",
                       "subtitle":  "What does it mean to be set free in Christ?",
                       "link":  "https://drewbuell.substack.com/p/nothing-to-negotiate",
@@ -13,13 +20,6 @@
                       "link":  "https://drewbuell.substack.com/p/everyone-has-a-master",
                       "date":  "2026-10-28T14:01:13.0000000+00:00",
                       "image":  "https://substackcdn.com/image/fetch/$s_!VeZG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbb10a364-3635-4a4e-9cbf-e1cc371c95ed_1024x385.jpeg"
-                  },
-                  {
-                      "title":  "Refiner’s Fire",
-                      "subtitle":  "Why does life get so hard sometimes?",
-                      "link":  "https://drewbuell.substack.com/p/refiners-fire",
-                      "date":  "2026-10-22T14:02:06.0000000+00:00",
-                      "image":  null
                   }
               ]
 }
