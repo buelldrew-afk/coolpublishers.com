@@ -1,6 +1,13 @@
 {
     "posts":  [
                   {
+                      "title":  "The God Who Wins By Losing",
+                      "subtitle":  "What a three-day Roman triumph reveals about the strange victory of the cross",
+                      "link":  "https://drewbuell.substack.com/p/the-god-who-wins-by-losing",
+                      "date":  "2026-11-11T15:02:08.0000000+00:00",
+                      "image":  "https://substackcdn.com/image/fetch/$s_!sDPx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff2c48889-87b1-42c4-aec1-d813135e5be8_1536x577.png"
+                  },
+                  {
                       "title":  "Stuck...",
                       "subtitle":  "Have you ever felt completely stuck\u0026#8212;unable to serve, move forward, or do what you used to do?",
                       "link":  "https://drewbuell.substack.com/p/stuck",
@@ -13,13 +20,6 @@
                       "link":  "https://drewbuell.substack.com/p/nothing-to-negotiate",
                       "date":  "2026-11-04T15:00:59.0000000+00:00",
                       "image":  "https://substackcdn.com/image/fetch/$s_!9pgY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa49dccb0-4ea7-4ab9-808e-02edf5f62a3a_2816x720.png"
-                  },
-                  {
-                      "title":  "Everyone Has a Master",
-                      "subtitle":  "The question is who owns you...",
-                      "link":  "https://drewbuell.substack.com/p/everyone-has-a-master",
-                      "date":  "2026-10-28T14:01:13.0000000+00:00",
-                      "image":  "https://substackcdn.com/image/fetch/$s_!VeZG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbb10a364-3635-4a4e-9cbf-e1cc371c95ed_1024x385.jpeg"
                   }
               ]
 }
